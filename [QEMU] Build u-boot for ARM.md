@@ -6,7 +6,7 @@ In the previous post, we have the toolchain `arm-unknown-linux-gnueabi` in hand.
 	cd u-boot
 ```
 
-To make use of it, you need to add the directory to your path using the following command:
+To make use of the toolchain, you need to add the directory to your path using the following command:
 ```
 	PATH=~/x-tools/arm-unknown-linux-gnueabi/bin:$PATH
 ```
