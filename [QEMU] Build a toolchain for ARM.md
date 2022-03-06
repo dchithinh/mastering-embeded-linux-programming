@@ -1,9 +1,10 @@
 We use a crosstool-NG script to build a toolchain.
-You will need a working native toolchain and build tools on your
-host PC. To work with crosstool-NG on an Ubuntu host, you will need to install the
-packages using the following command:
+
+You will need a working native toolchain and build tools on your host PC. To work with crosstool-NG on an Ubuntu host, you will need to install the packages using the following command:
 
 `sudo apt-get install automake bison chrpath flex g++ git gperf gawk libexpat1-dev libncurses5-dev libsdl1.2-dev libtool python2.7-dev texinfo`
+
+Note: My PC is running ubuntu 20.04
 
 ### Get the crosstool-NG
 `git clone https://github.com/crosstool-ng/crosstool-ng.git`
@@ -36,7 +37,7 @@ Status  Sample name
 [L...]   arc-multilib-linux-gnu
 ```
 
-In this tutorial, I will build a toolchain for ARM 32bit for QEMU. It is `arm-unknown-linux-gnueabi`
+In this tutorial, I will build a toolchain for ARM CPU architecture. It is `arm-unknown-linux-gnueabi`
 
 You can take a look the details this toolchain by command:
 `./ct-ng show-arm-unknown-linux-gnueabi`
@@ -47,7 +48,7 @@ You can take a look the details this toolchain by command:
 
 After this step, there is a **.config** file in the same directory which is configured for `arm-unknown-linux-gnueabi`
 
-At this point, you can review the configuration and make changes using the configuration menu command `menuconfig` or edit `.config` file:
+At this point, you can review the configuration and make changes using the configuration by `menuconfig` or edit `.config` file:
 ```
   ./ct-ng menuconfig
   or
@@ -96,6 +97,7 @@ You will see some logs as below:
 ```
 
 The build will take about half an hour, after which you will find your toolchain is present in ~/x-tools/
+
 For example:
 ```
 ls -l x-tools/
@@ -109,4 +111,5 @@ dr-xr-xr-x 8 dcthinh dcthinh 4096 Thg 3   4 21:06 arm-unknown-linux-gnueabi
 
 At this point, we already have a cross compiler which can be used for compile u-boot, linux, dtb for the target board. I will share it in the next posts.
 
-Note: The post is not intended for teching anything, it is a share what I've learnt. Please point out if you see something is incorrect.
+References: 
+- Mastering embedded linux programming
