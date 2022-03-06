@@ -47,11 +47,29 @@ You can take a look the details this toolchain by command:
 
 After this step, there is a **.config** file in the same directory which is configured for `arm-unknown-linux-gnueabi`
 
-At this point, you can review the configuration and make changes using the configuration menu command menuconfig:
-`./ct-ng menuconfig`
+At this point, you can review the configuration and make changes using the configuration menu command `menuconfig` or edit `.config` file:
+```
+  ./ct-ng menuconfig
+  or
+  vi .config
+```
+In this, I will edit `.config` file.
+- Use linux v4.10.17
+- Disable all debug option in crosstool
 
-In this example, I turn off the debug option for saving time while building. (Press N for unchecked all debug tool)
-![e4b45529fdca2195b2f0422c90df21cd.png](../../_resources/e4b45529fdca2195b2f0422c90df21cd.png)
+by changing the below CONFIG option:
+```
+CT_LINUX_V_4_10=y
+...
+CT_LINUX_VERSION="4.10.17"
+...
+# CT_DEBUG_DUMA is not set
+# CT_DEBUG_GDB is not set
+# CT_DEBUG_LTRACE is not set
+# CT_DEBUG_STRACE is not set
+```
+
+
 
 Then save and start building
 
