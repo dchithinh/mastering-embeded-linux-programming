@@ -60,6 +60,7 @@ In this, I will edit `.config` file.
 
 by changing the below CONFIG option:
 ```
+# CT_LINUX_V_5_2 is not set
 CT_LINUX_V_4_10=y
 ...
 CT_LINUX_VERSION="4.10.17"
