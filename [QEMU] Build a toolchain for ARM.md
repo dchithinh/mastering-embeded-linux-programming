@@ -2,7 +2,7 @@ We use a crosstool-NG script to build a toolchain.
 
 You will need a working native toolchain and build tools on your host PC. To work with crosstool-NG on an Ubuntu host, you will need to install the packages using the following command:
 
-`sudo apt-get install automake bison chrpath flex g++ git gperf gawk libexpat1-dev libncurses5-dev libsdl1.2-dev libtool python2.7-dev texinfo`
+`sudo apt install automake bison chrpath flex g++ git gperf gawk libexpat1-dev libncurses5-dev libsdl1.2-dev libtool python2.7-dev texinfo`
 
 Note: My PC is running ubuntu 20.04
 
