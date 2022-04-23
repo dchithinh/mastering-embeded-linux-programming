@@ -41,16 +41,12 @@ Clean everything first.
     make ARCH=arm CROSS_COMPILE=arm-unknown-linux-gnueabi- defconfig
     ...
 ```
-Make config file by using menuconfig, and just save all. This will generate the `.config ` file.
-```
-    make menuconfig
-```
 
 Change the install directory which will be installed in your staging directory.
 ```
     vi .config
     ...
-    /* Note: CONFIG_PREFIX=~/rootfs doesn't work, don't know reason yet.*/
+    /* Note: CONFIG_PREFIX=~/rootfs doesn't work*/
     CONFIG_PREFIX=${HOME}/rootfs 
     
 ```
