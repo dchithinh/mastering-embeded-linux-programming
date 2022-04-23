@@ -16,6 +16,7 @@ There are a set of known working configuration files in `<PATH>/arch/arm/configs
 
 For example, to configure Linux to run on a wide range of SoCs using the armv7-a architecture, you would type:
 ```
+	PATH=~/x-tools/arm-unknown-linux-gnueabi/bin:$PATH
 	make ARCH=arm CROSS_COMPILE=arm-unknown-linux-gnueabi- multi_v7_defconfig 
 ```
 
