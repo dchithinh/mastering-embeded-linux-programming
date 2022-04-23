@@ -136,13 +136,13 @@ The following sequence of instructions creates the archive, compresses it and ad
 
 ### Boot the device
 ```
-    cd linux
+    cd linux-stable
 
     QEMU_AUDIO_DRV=none qemu-system-arm -m 256M -nographic \
     -M vexpress-a9 -kernel arch/arm/boot/zImage \
     -dtb arch/arm/boot/dts/vexpress-v2p-ca9.dtb \
     -append "console=ttyAMA0 rdinit=/bin/sh" \
-    -initrd /home/dcthinh/initramfs.cpio.gz
+    -initrd ${HOME}/initramfs.cpio.gz
 
 ```
 
