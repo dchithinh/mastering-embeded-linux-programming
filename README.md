@@ -6,7 +6,7 @@ For more details, the guide steps can be looked at the book: mastering embedded 
 #
 
 # Build with docker
-If your PC is running unbuntu with different version 20.04 as this guide. To avoid errors(mismatch linux version) when building, there is a simple docker in this guide that can be used.
+If your PC is running unbuntu with different version of 20.04 as this guide. To avoid errors(mismatch linux version, can not install requirement packages, etc) when building, there is a simple docker in this guide that can be used.
 - Build docker:
     ```
     cd DockerBuild
