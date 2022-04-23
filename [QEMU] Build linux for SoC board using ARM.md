@@ -1,13 +1,14 @@
 In this tutorial, I will show you how to build a kernel with our toolchain.
+
 **Important note: Please follow the linux branch as the guide to ensure successfully of kernel as well as the root filesystem which will be guided in the next post.**
 
 ### Get the linux source code
 ``` 
-git clone https://github.com/torvalds/linux.git
+git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git
 ```
 In the configuration of cross compiler, we use the linux version of v4.10.17 so we should checkout to that linux branch to avoid errors.
 ```
-cd linux
+cd linux-stable
 git checkout v4.10.17
 ```
 ### Make the configuration file for a target board
