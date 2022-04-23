@@ -104,6 +104,7 @@ You need just two nodes to boot with BusyBox: console and null.
 
 You can use the -m option to `mknod` to set the mode when creating the node. You need to be root to create a device node:
 ```
+    Note: If you uses docker to build, you need to enter root to make these 2 nodes by `docker exec -u root -it <container name> `
     cd ~/rootfs
     sudo mknod -m 666 dev/null c 1 3
     sudo mknod -m 600 dev/console c 5 1
