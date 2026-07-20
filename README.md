@@ -26,3 +26,9 @@ If your PC is running unbuntu with different version of 20.04 as this guide. To 
     ```
 
 Then you will be in the terminal, from there you can start to build with the command line followed this guide.
+
+ ## License
+
+  This documentation is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
+
+  See [LICENSE](LICENSE) for details.
